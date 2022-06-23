@@ -91,6 +91,17 @@ button {
   font-weight: 800;
 }
 
+.input-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+}
+
 p {
   color: rgb(3, 3, 3);
   font-size: 25px;
