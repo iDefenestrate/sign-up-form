@@ -1,0 +1,39 @@
+.background-side {
+  overflow: hidden;
+  background: url(../images/jake-blucker-background.jpg);
+  background-size: cover;
+  background-repeat: none;
+  height: 100%;
+  width: 25%;
+  position: relative;
+}
+
+.bg-header {
+  display: flex;
+  font-family: norse-font;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: white;
+  position: absolute;
+  top: 40%;
+  font-size: 80px;
+  width: 100%;
+}
+
+img {
+  height: 150px;
+  max-width: 300px;
+  padding-right: 20px;
+}
+
+.bg-footer {
+  font-family: poppins-light;
+  text-align: center;
+  color: white;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  font-size: 13px;
+}

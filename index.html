@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/bg-side.css" />
+    <link rel="stylesheet" href="css/form-side.css" />
   </head>
   <body>
     <div class="container">
@@ -17,53 +19,64 @@
       </div>
 
       <div class="form-side">
-        <div class="form form-header">
-          <p>
+        <div class="form-header">
+          <p class="top">
             This isn't a real online service, but it kinda looks like one, huh?
-            Join the community and start your journey to success! Sign up today
-            to get started.
+            Join the community and start your journey to success!<span
+              class="span-1"
+            >
+              Sign up today to get started.
+            </span>
           </p>
-          <p>You know you want to.</p>
+          <p class="top-2">You know you want to.</p>
         </div>
-        <div class="form sign-up">
-          <form>
-            <fieldset>
-              <div class="input-cell">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" />
-              </div>
-              <div class="input-cell">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" />
-              </div>
-            </fieldset>
+        <form>
+          <fieldset>
+            <div class="input-cell">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+            <div class="input-cell">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+          </fieldset>
 
-            <fieldset>
-              <div class="input-cell">
-                <label for="email">Email </label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div class="input-cell">
-                <label for="number">Phone Number</label>
-                <input type="text" name="phone-number" id="number" />
-              </div>
-            </fieldset>
+          <fieldset>
+            <div class="input-cell">
+              <label for="email">Email </label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="input-cell">
+              <label for="number">Phone Number</label>
+              <input type="number" name="phone-number" id="number" />
+            </div>
+          </fieldset>
 
-            <fieldset>
-              <div class="input-cell">
-                <label for="password">Password </label>
-                <input type="password" name="password" id="password" />
-              </div>
-              <div class="input-cell">
-                <label for="number">Confirm Password</label>
-                <input type="text" name="phone-number" id="number" />
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="form form-footer">
-          <button type="submit">Create Account</button>
-          <p>Already have an account? Log in</p>
+          <fieldset>
+            <div class="input-cell">
+              <label for="password">Password </label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div class="input-cell">
+              <label for="password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="password"
+                required
+              />
+            </div>
+          </fieldset>
+        </form>
+        <div class="form-footer">
+          <div class="button-box">
+            <button type="submit">Create Account</button>
+          </div>
+
+          <p class="bottom">
+            Already have an account? <span class="span-2">Log in</span>
+          </p>
         </div>
       </div>
     </div>
