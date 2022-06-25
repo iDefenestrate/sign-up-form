@@ -13,71 +13,73 @@
     <div class="container">
       <div class="background-side">
         <div class="bg-header">
-          <img src="images/odin-lined.png" alt="odin logo" />ODIN
+          <img src="images/odin-lined.png" alt="odin logo" />JOIN ODIN
         </div>
         <div class="bg-footer">Photo by Jake Blucker on Unsplash</div>
       </div>
 
       <div class="form-side">
-        <div class="form-header">
-          <p class="top">
-            This isn't a real online service, but it kinda looks like one, huh?
-            Join the community and start your journey to success!<span
-              class="span-1"
-            >
-              Sign up today to get started.
-            </span>
-          </p>
-          <p class="top-2">You know you want to.</p>
-        </div>
+        <p>
+          This isn't a real online service, but it kinda looks like one, huh?
+          Join the community and start your journey to success!<span
+            class="span"
+          >
+            Sign up today to get started.
+          </span>
+        </p>
+        <p>You know you want to.</p>
         <form>
           <fieldset>
-            <div class="input-cell">
-              <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" />
+            <div class="input-set-1">
+              <div class="input-cell">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" />
+              </div>
+              <div class="input-cell">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+              <div class="input-cell">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" />
+              </div>
             </div>
-            <div class="input-cell">
-              <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" />
+            <div class="input-set-2">
+              <div class="input-cell">
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="phone-number"
+                  name="phone-number"
+                  id="phone-number"
+                  pattern="([0-9]{3}[-.]([0-9]{3})[-.]([0-9]{4})"
+                  placeholder="000-000-0000"
+                  required
+                />
+              </div>
+              <div class="input-cell">
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="input-cell">
+                <label for="password">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="password"
+                  required
+                />
+              </div>
             </div>
           </fieldset>
-
-          <fieldset>
-            <div class="input-cell">
-              <label for="email">Email </label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="input-cell">
-              <label for="number">Phone Number</label>
-              <input type="number" name="phone-number" id="number" />
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <div class="input-cell">
-              <label for="password">Password </label>
-              <input type="password" name="password" id="password" required />
-            </div>
-            <div class="input-cell">
-              <label for="password">Confirm Password</label>
-              <input
-                type="password"
-                name="confirm-password"
-                id="password"
-                required
-              />
-            </div>
-          </fieldset>
-        </form>
-        <div class="form-footer">
           <div class="button-box">
             <button type="submit">Create Account</button>
           </div>
+        </form>
 
-          <p class="bottom">
-            Already have an account? <span class="span-2">Log in</span>
-          </p>
-        </div>
+        <p class="log-in">
+          Already have an account?
+          <a href="#">Log in</a>
+        </p>
       </div>
     </div>
   </body>

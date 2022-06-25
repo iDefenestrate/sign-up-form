@@ -1,11 +1,15 @@
 .background-side {
-  overflow: hidden;
   background: url(../images/jake-blucker-background.jpg);
   background-size: cover;
   background-repeat: none;
-  height: 100%;
-  width: 25%;
+  background-position: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  flex: 1 1 0%;
+  width: 45%;
 }
 
 .bg-header {
@@ -13,11 +17,12 @@
   font-family: norse-font;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   position: absolute;
   top: 40%;
   font-size: 80px;
+  padding: 20px 0px;
   width: 100%;
 }
 
@@ -28,12 +33,13 @@ img {
 }
 
 .bg-footer {
-  font-family: poppins-light;
-  text-align: center;
   color: white;
-  height: 40px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 90%;
-  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
 }
