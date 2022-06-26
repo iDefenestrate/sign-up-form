@@ -1,7 +1,6 @@
 .background-side {
   background: url(../images/jake-blucker-background.jpg);
   background-size: cover;
-  background-repeat: none;
   background-position: center;
   position: relative;
   display: flex;
@@ -41,5 +40,6 @@ img {
   top: 90%;
   text-align: center;
   width: 100%;
-  font-size: 22px;
+  font-size: 14px;
+  font-family: ald-font;
 }

@@ -1,6 +1,6 @@
 .form-side {
   flex: 2 1 0%;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(218, 214, 214);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,24 +9,66 @@
 /* form header */
 
 .form-side > p {
-  font-size: 20px;
-  font-family: swr-font;
-  margin-left: 50px;
+  color: black;
+  font-size: 30px;
+  font-family: ald-font;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 290px;
+  line-height: 1.7;
 }
 
 .form-side > p:nth-child(2) {
-  margin-top: 20px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+span.bold {
+  font-weight: 600;
+}
+
+span.italic {
+  font-style: italic;
 }
 
 /* form */
+
+form {
+  font-family: ald-font;
+}
+
+abbr {
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+label {
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+input {
+  border: 1px gray solid;
+  border-radius: 5px;
+  padding: 7px 25px 7px 0px;
+  margin-left: 5px;
+}
+
+input:focus {
+  border: 1px rgb(59, 59, 214) solid;
+  box-shadow: 2px 2px 1px rgb(156, 156, 158);
+}
+
+input:invalid {
+  border: 1px red solid;
+}
 
 .input-set-1,
 .input-set-2 {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 30px;
+  gap: 30px;
+  padding: 30px 0px 50px 50px;
 }
 
 .input-set-1 {
@@ -38,7 +80,8 @@ fieldset {
   display: flex;
   gap: 70px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px rgb(207, 64, 64);
+  box-shadow: 0px 0px 10px rgb(148, 148, 148);
+  font-size: 17px;
 }
 
 .input-cell {
@@ -49,15 +92,36 @@ fieldset {
 /* form footer */
 
 .button-box {
-  margin-top: 40px;
-  margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 73px;
 }
 
 button {
-  margin-bottom: 20px;
   padding: 20px 40px;
   font-size: 1.3rem;
   border-radius: 8px;
   border: none;
-  font-family: swr-font;
+  cursor: pointer;
+  background-color: rgb(100, 28, 0);
+  color: white;
+  font-family: ald-font;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.67;
+}
+
+p.log-in {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(148, 42, 0);
 }

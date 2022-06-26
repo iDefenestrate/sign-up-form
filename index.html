@@ -22,7 +22,7 @@
         <p>
           This isn't a real online service, but it kinda looks like one, huh?
           Join the community and start your journey to success!<span
-            class="span"
+            class="bold"
           >
             Sign up today to get started.
           </span>
@@ -32,36 +32,44 @@
           <fieldset>
             <div class="input-set-1">
               <div class="input-cell">
-                <label for="first-name">First Name</label>
+                <label for="first-name"
+                  >First Name</label
+                >
                 <input type="text" name="first-name" id="first-name" />
               </div>
               <div class="input-cell">
-                <label for="last-name">Last Name</label>
+                <label for="last-name">Last Name</label
+                >
                 <input type="text" name="last-name" id="last-name" />
               </div>
               <div class="input-cell">
-                <label for="email">Email </label>
-                <input type="email" name="email" id="email" />
+                <label for="email">Email<abbr title="required" aria-label="required">*</abbr></label
+                ></label>
+                <input type="email" name="email" id="email" required/>
               </div>
             </div>
+
             <div class="input-set-2">
               <div class="input-cell">
-                <label for="phone-number">Phone Number</label>
+                <label for="phone-number">Phone Number</label
+                ></label>
                 <input
                   type="phone-number"
                   name="phone-number"
                   id="phone-number"
-                  pattern="([0-9]{3}[-.]([0-9]{3})[-.]([0-9]{4})"
+                  pattern="([0-9]{3}"
                   placeholder="000-000-0000"
-                  required
+                  
                 />
               </div>
               <div class="input-cell">
-                <label for="password">Password </label>
+                <label for="password">Password<abbr title="required" aria-label="required">*</abbr></label
+                ></label>
                 <input type="password" name="password" id="password" required />
               </div>
               <div class="input-cell">
-                <label for="password">Confirm Password</label>
+                <label for="password">Confirm Password<abbr title="required" aria-label="required">*</abbr></label
+                ></label>
                 <input
                   type="password"
                   name="confirm-password"

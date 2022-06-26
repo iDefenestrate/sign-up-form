@@ -4,15 +4,9 @@
 }
 
 @font-face {
-  font-family: poppins-light;
-  src: url(../fonts/Poppins-ExtraLight.ttfs);
+  font-family: ald-font;
+  src: url(../fonts/Aldrich-Regular.ttf);
 }
-
-@font-face {
-  font-family: swr-font;
-  src: url(../fonts/SawarabiMincho-Regular.ttf);
-}
-
 * {
   box-sizing: border-box;
   margin: 0px;
